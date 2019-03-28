@@ -40,12 +40,12 @@
         <div class="row">
           <form name="form" action="{% url 'result' %}">
             {% csrf_token %}
-            <input type="text" name="number1" onKeyUp="javascript:moveFocus(2,this,form.number2);" class="form-control input-align">
-            <input type="text" name="number2" onKeyUp="javascript:moveFocus(2,this,form.number3);" class="form-control input-align">
-            <input type="text" name="number3" onKeyUp="javascript:moveFocus(2,this,form.number4);" class="form-control input-align">
-            <input type="text" name="number4" onKeyUp="javascript:moveFocus(2,this,form.number5);" class="form-control input-align">
-            <input type="text" name="number5" onKeyUp="javascript:moveFocus(2,this,form.number6);" class="form-control input-align">
-            <input type="text" name="number6" maxlength="2" class="form-control input-align">
+            <input type="number" min=1 max=45 name="number1" onKeyUp="javascript:moveFocus(2,this,form.number2);" class="form-control input-align">
+            <input type="number" min=1 max=45 name="number2" onKeyUp="javascript:moveFocus(2,this,form.number3);" class="form-control input-align">
+            <input type="number" min=1 max=45 name="number3" onKeyUp="javascript:moveFocus(2,this,form.number4);" class="form-control input-align">
+            <input type="number" min=1 max=45 name="number4" onKeyUp="javascript:moveFocus(2,this,form.number5);" class="form-control input-align">
+            <input type="number" min=1 max=45 name="number5" onKeyUp="javascript:moveFocus(2,this,form.number6);" class="form-control input-align">
+            <input type="number" min=1 max=45 name="number6" maxlength="2" class="form-control input-align">
             <input type="submit" class="btn btn-outline-warning" value="구매 하기">
           </form>
         </div>
