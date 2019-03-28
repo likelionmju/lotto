@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import random
 
 # Create your views here.
@@ -9,8 +9,12 @@ def result(request):
     # input number
     input = list();
     for i in range(0,6):
-        input.append(int(request.GET['number'+str(i+1)]))
-
+        number = request.GET['number'+str(i+1)]
+        # if number is null, redirect home.html
+        if number == '':
+            return redirect('home')
+        input.append(int(number))
+ 
     # random number
     rand_num = list() 
     for i in range(0,7):
