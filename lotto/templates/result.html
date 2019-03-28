@@ -25,6 +25,20 @@
     </p>
 
     <p>맞춘 갯수: {{ count }}</p>
+
+    {% if count == 6 %}
+    <p>1등</p>
+    {% elif count == 5 %}
+    <p>2등</p>
+    {% elif count == 4 %}
+    <p>3등</p>
+    {% elif count == 3 %}
+    <p>4등</p>
+    {% elif count == 2 %}
+    <p>5등</p>
+    {% elif count < 2 %}
+    <p>꽝</p>
+    {% endif %}
 </body>
 
 </html>
