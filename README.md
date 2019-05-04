@@ -9,6 +9,8 @@ MJU(Seoul) x Likelion Django Lotto
 
 명지대학교(서울) 멋쟁이사자처럼 Django 교안 프로젝트 두 번째 교안입니다.
 
+[Demo] [https://tangjinjaem-lotto.herokuapp.com](https://tangjinjaem-lotto.herokuapp.com)
+
 ### 2. 실습
 
 ---
