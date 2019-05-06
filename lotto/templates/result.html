@@ -21,15 +21,15 @@
       <div class="card-body">
         <div>
           <p>당신이 입력한 값은</p>
-          {% for num in input %}
-          <strong>{{ num }}</strong>
+          {% for number in number_list %}
+          <strong>{{ number }}</strong>
           {% endfor %}
         </div>
         <br>
         <div>
           <p>추첨한 값</p>
-          {% for num in rand_num %}
-          <strong>{{ num }}</strong>
+          {% for rand in rand_list %}
+          <strong>{{ rand }}</strong>
           {% endfor %}
         </div>
         <br>
